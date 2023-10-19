@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Rajesh Kumar</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap" rel="stylesheet">
+    <script src="script.js"></script>
+    <script src="https://kit.fontawesome.com/ce4327b835.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <ul id="sidemenu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">My Work</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fas fa-times" onclick="closemenu()"></i>
+                </ul>
+                <i class="fas fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <div class="devinfo">
+                    <p class="hello">Hi, I am </p>
+                    <p class="name ">Rajesh Kumar</p>
+                    <p class="aboutmy">a Web Developer</p>
+                    <p class="button">
+                        <button ><a href="Rajesh Kumar_Resume.pdf" download>Download CV</a></button>
+                        <button class="contact-btn"><a href="#contact">Contact</a></button>
+                    </p>
+                </div>
+                <div class="devpic">
+                    <img src="profilemainpng.png" >
+                </div>
+                </div>
+            </div>
+        </div>
+        <!-- ---------------------------About me ----------------------->
+        <div id="about">
+            <div class="container">
+                <div class="row">
+                    <div class="about-col-1">
+                        <img src="profile.png">
+                    </div>
+                    <div class="about-col-2">
+                        <center>
+                            <h1 class="sub-title">About Me</h1>
+                        </center>
+                        <p>
+                            Hi. Thanks for checking out my website and design work. I’m a web
+                            developer. I am currently pursuing my B.tech degree in Computer 
+                            Science & Engineering from <span style="font-weight: bold;">Shaheed Udham Singh College of Engineering & Technology , Tangori, Mohali,Punjab</span>. I spend my
+                            whole day, practically every day, experimenting with HTML, CSS,
+                            JavaScript, MySQL, Programming with Java and C++;
+                        </p>
+                        <div class="tab-titles">
+                            <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                            <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                            <p class="tab-links" onclick="opentab('educational')">Education</p>
+                        </div>
+                        <div class="tab-contents active-tab" id="skills">
+                            <ul>
+                                <li><span>UI/UX</span><br>Designing Web/App Interfaces</li>
+                                <li><span>Web Developmet</span><br>Web App Development </li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="experience">
+                            <ul>
+                                <li><span>July 2022 - Aug 2022 </span><br>Training at Thinknext Technologies Pvt.
+                                    Ltd.<br>
+                                </li>
+                            </ul>
+                            <ul>
+                                <li><span>March 2022 </span><br>FreeCodeCamp - Responsive Web Design (HTML,CSS & Media Query)<br>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="educational">
+                            <ul>
+                                <li><span>2020 - present</span><br>Shaheed Udham Singh College Of Engineering and
+                                    Technology,Tangori,Mohali,Punjab<br></li>
+                                <li><span>2019-2020</span><br>12<sup>th &nbsp;&nbsp;</sup>|&nbsp;&nbsp;
+                                    G.S.S.School,Mullanpur, Punjab <br></li>
+                                <li><span>2018-2019</span><br>10<sup>th&nbsp;&nbsp;</sup>| &nbsp;&nbsp;G.High
+                                    School,Rani Majra,Punjab <br></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- ---------------------------Services----------------------------- -->
+        <div id="services">
+            <div class="container">
+                <center>
+                    <h1 class="sub-title">My Services</h1>
+                </center>
+                <div class="services-list">
+                    <div>
+                        <i class="fa-solid fa-code"></i>
+                        <h2>Web Design</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore quibusdam error maxime
+                            reiciendis quam placeat, molestiae illum fuga laborum, voluptates excepturi nisi magni
+                            corrupti dolorem culpa possimus natus deleniti accusantium.</p>
+                        <a href="#">learn More...</a>
+                    </div>
+                    <div>
+                        <i class="fa-brands fa-app-store-ios"></i>
+                        <h2>App Design</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore quibusdam error maxime
+                            reiciendis quam placeat, molestiae illum fuga laborum, voluptates excepturi nisi magni
+                            corrupti dolorem culpa possimus natus deleniti accusantium.</p>
+                        <a href="#">Learn More...</a>
+                    </div>
+                    <div>
+                        <i class="fa-solid fa-crop"></i>
+                        <h2>UI/UX Design</h2>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Beatae magnam labore culpa aperiam
+                            nulla officia, saepe deleniti eligendi alias dolore ipsam vero? Ut, asperiores suscipit! Id
+                            minima aliquid eaque minus?</p>
+                        <a href="#">Learn More...</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- -----------------------------My work--------------------------- -->
+        <div id="portfolio">
+            <div class="container">
+                <center>
+                    <h1 class="sub-title">My Work</h1>
+                </center>
+                <div class="work-list">
+                    <div class="work">
+                        <img src="work1.png" alt="Not Found">
+                        <div class="layer">
+                            <h3>Hospital Management System</h3>
+                            <p class="frontback">Front-End:</p>
+                            <p>HTML5</p>
+                            <p>CSS3 </p>
+                            <p>JavaScript</p>
+                            <p>Bootstrap-5.0</p>
+
+                            <p class="frontback">Back-End:</p>
+                            <p>Java</p>
+                            <p>MySQL</p>
+                            <p>Java Server Page (jsp)</p>
+                            <a href="work1.png"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        </div>
+                    </div>
+                    <div class="work">
+                        <img src="work2.jpeg" alt="Not Found">
+                        <div class="layer">
+                            <h3>Library Management System</h3>
+                            <p class="frontback">Front-End:</p> 
+                            <p>HTML5</p> 
+                            <p>CSS3 </p> 
+                            <p>JavaScript</p>
+                            <p>Bootstrap-5.0</p> 
+                            
+                            <p class="frontback">Back-End:</b></p>
+                            <p>Java</p>
+                            <p>MySQL</p>
+                            <p>Java Server Page (jsp)</p>
+                            <a href="work2.jpeg"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        </div>
+                    </div>
+                    <div class="work">
+                        <img src="SocialMedia.jpeg" alt="Not Found">
+                        <div class="layer">
+                            <h3>Social Media website</h3>
+                            <p class="frontback">Front-End:</p>
+                            <p>HTML5</p>
+                            <p>CSS3 </p>
+                            <p>JavaScript</p>
+                    
+                            <!-- <p class="frontback">Back-End:</p> -->
+                            <!-- <p>Java</p>
+                            <p>MySQL</p>
+                            <p>Java Server Page (jsp)</p> -->
+                            <a href="SocialMedia.jpeg"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        </div>
+                    </div>
+                    <div class="work">
+                        <img src="work-4.jpeg" alt="Not Found">
+                        <div class="layer">
+                            <h3>Tribute page for A.P.J. Abdul Kalam </h3>
+                            <p class="frontback">Front-End:</p>
+                            <p>HTML5</p>
+                            <p>CSS3 </p>
+                            <a href="work-4.jpeg"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        </div>
+                    </div>
+                    <div class="work">
+                        <img src="work1.png" alt="Not Found">
+                        <div class="layer">
+                            <h3>Hospital Management System</h3>
+                            <p class="frontback">Front-End:</p>
+                            <p>HTML5</p>
+                            <p>CSS3 </p>
+                            <p>JavaScript</p>
+                            <p>Bootstrap-5.0</p>
+
+                            <p class="frontback">Back-End:</p>
+                            <p>Java</p>
+                            <p>MySQL</p>
+                            <p>Java Server Page (jsp)</p>
+                            <a href="work1.png"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- ----------------------------skills----------------------- -->
+<div id="my-skills">
+    <div class="container">
+        <center>
+            <h1 class="skills-sub-title">My Skills</h1>
+        </center>
+        <div class="skills-list">
+            <div>
+                <i class="fa-brands fa-html5"></i>
+                <h2>HTML</h2> 
+            </div>
+            <div>
+                <i class="fa-brands fa-css3-alt"></i>
+                <h2>CSS</h2>
+            </div>
+            <div>
+                <i class="fa-brands fa-square-js"></i>
+                <h2>JavaScript</h2>
+            </div>
+            <div>
+                <i class="fa-solid fa-database"></i>
+                <h2>MySQL</h2>
+            </div>
+            <div>
+                <i class="fa-brands fa-java"></i>
+                <h2>Java</h2>
+            </div>
+            <div>
+                <i class="fa-solid fa-laptop-code"></i>
+                <h2>C++</h2>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- -------------------------------skill end-------------------- -->
+        <!-- ------------------Contact me ---------------------------------->
+        <div id="contact">
+            <div class="container">
+                <h1 class="sub-title">Contact Me </h1>
+                <div class="row">
+                    <div class="contact-left">
+                       
+                        <p><i class="fa-solid fa-envelope"></i>rajesh84376@gmail.com</p>
+                        <p><i class="fa-solid fa-phone-volume"></i>(+91) 8544808008</p>
+                        <p><i class="fa-solid fa-location-dot"></i>Saini Majra,Mohali,Punjab-140901</p>
+                        <div class="social-icons">
+                            <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                            <a href="#"><i class="fa-brands fa-twitter-square"></i></a>
+                            <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                        </div>
+                        <a href="Rajesh Kumar_Resume.pdf" download class="btn btn2">Download CV</a>
+                    </div>
+                    <div class="contact-right">
+                        <form name="submit-to-google-sheet">
+                            <input type="text" name="Name" placeholder="Enter Your Name" required>
+                            <input type="email" name="Email" placeholder="Enter Your E-Mail" required>
+                            <textarea name="msg" rows="6" placeholder="Your Message..."></textarea>
+                            <button type="submit" class="btn btn2">Submit</button>
+                        </form>
+                        <span id="msg"></span>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright">
+                <p> Copyright © 2023. All rights reserved by &nbsp;<i class="fa-solid fa-heart"></i>&nbsp; Rajesh Kumar</p>
+                
+            </div>
+        </div>
+<!-- ------------------------------------------------------------ -->
+<script> 
+var sidemenu = document.getElementById("sidemenu");
+function openmenu(){
+    sidemenu.style.left="0";
+}
+function closemenu(){
+    sidemenu.style.left="-200px";
+}
+function closemenu(){
+    sidemenu.style.left="-250px";
+}
+</script>
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbwXX_ekk2s5buWBMsXKIT5JVqGIlatKYYfiR4e1Bg16M5tnCrWVOMroVLlTBRUx2-18/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+      .then((response) => {
+        msg.innerHTML="Message sent successfully!"
+        setTimeout(function(){
+        msg.innerHTML=""
+
+        },5000)
+        form.reset()
+      })
+      .catch((error) => console.error("Error!", error.message));
+  });
+</script>
+</body>
+
+</html>
