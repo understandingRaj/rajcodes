@@ -92,10 +92,13 @@ nav li a:hover::after {
   cursor: pointer;
   margin-top: 50px;
   font-size: 20px;
+  color: #551a8b;
+  font-weight: bold;
 }
 
 .button button a {
   text-decoration: none;
+  color: #551a8b;
 }
 
 .button button:hover {
@@ -111,6 +114,9 @@ nav li a:hover::after {
   display: flex;
   justify-content: space-around;
 }
+.devpic img{
+  height: auto;
+}
 
 .devinfo {
   display: flex;
@@ -124,10 +130,11 @@ nav li a:hover::after {
   width: 100%;
   margin: 92px auto;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-evenly;
   border-radius: 25px;
   border: 3px solid red;
   box-shadow: 0px 0px 10px 6px gold;
+  overflow: hidden;
 }
 
 .devinfo {
@@ -511,16 +518,51 @@ nav .fas {
 
 
 /* ----------------------------css for small devices---------------- */
+@media screen and (max-width:1484px) {
+  .about-col-1 {
+    flex-basis: 45%;
+  }
+  .about-col-2{
+    flex-basis: 50%
+  }
+}
+@media only screen and (max-width:1027px){
+.devinfo{
+  text-align: center;
+}
+.name{
+  font-size: 55px;
+}
+}
+@media screen and (max-width:965px) {
+  .hello{
+    font-size: 35px;
+  }
+  .name{
+    font-size: 50px;
+  }
+  .button button{
+    margin-top: 30px;
+  }
+  .button button{
+     width: 190px;
+  }
+  .about-col-1 {
+    flex-basis: 100%;
+  }
+  .about-col-2{
+    flex-basis: 100%
+  }
+}
 
 @media only screen and (max-width:800px) {
-  nav ul li a {
-    font-size: 20px;
-  }
-
   .about-col-1,
   .about-col-2 {
     flex-basis: 100%;
   }
+  nav ul li {
+    margin: 10px 16px;
+}
 
   .sub-title {
     font-size: 40px;
@@ -551,6 +593,109 @@ nav .fas {
   }
 }
 
+
+/* ----------------------------------- */
+@media only screen and (width:800px) and (height:1280px){
+.name{
+  font-size: 55px;
+}
+nav .fas {
+  display: block;
+  font-size: 55px;
+  margin-top: 10px;
+}
+.contact-btn{
+display: none;
+}
+
+nav .fa-bars {
+  z-index: 0;
+}
+nav ul {
+  background: #ff004f;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 20px;
+  height: 100vh;
+  padding-top: 50px;
+  z-index: 2;
+  transition: left 0.5s;
+}
+nav ul li {
+  display: block;
+  margin: 38px;
+}
+nav ul li a{
+  font-size: 40px;
+}
+nav ul .fas {
+  position: absolute;
+  top: 25px;
+  right: 25px;
+  cursor: pointer;
+}
+#about {
+  padding: 50px 0;
+}
+
+#sidemenu {
+  z-index: 1;
+  height: 550px;
+  width: 250px;
+  border-radius: 0 30px 30px 30px;
+}
+
+.sub-title {
+  font-size: 56px;
+  padding-top: 27px;
+}
+.about-col-1,
+.about-col-2 {
+  flex-basis: 100%;
+}
+.about-col-2 p{
+  font-size: 30px;
+}
+.tab-contents ul li{
+  font-size: 20px;
+}
+.tab-contents ul li span{
+  font-size: 23px;
+}
+.services-list div{
+  font-size: 17px;
+}
+}
+/* -------------------------------- */
+ @media screen and (max-width:757px) {
+  .devpic{
+    display: none;
+  }
+  .hello{
+    font-size: 60px;
+  }
+  .name{
+    font-size: 70px;
+  }
+  .aboutmy{
+    font-size: 30px;
+  }
+  .button button{
+    padding: 16px 38px;
+    font-size: 30px;
+  }
+  nav ul li{
+    margin: 10px 5px;
+  }
+  nav ul li a{
+    font-size: 27px;
+  }
+  .button button{
+    margin-top: 27px;
+    width: 275px;
+  }
+ }
 @media only screen and (max-width:690px) {
   nav .fas {
     display: block;
@@ -644,352 +789,109 @@ nav .fas {
  
 }
 
-@media only screen and (max-width: 600px) {
-  .devpic img {
-    display: none;
-
-  }
-
-  .devpic {
-    width: 0px;
-  }
-
-  .devinfo {
-    text-align: center;
-    width: 50%;
-    margin-bottom: -160px;
-    margin-left: 10px;
-  }
-
-  .hello {
-    font-size: 25px;
-    margin-top: 100px;
-    font-weight: bolder;
-  }
-
-  .button button {
-    display: none;
-  }
-
-  .name {
-    font-size: 35px;
-    color: red;
-    width: 74vw;
-    text-shadow: 2px 2px 2px yellow;
-  }
-
-  .aboutmy {
-    width: 65vw;
-    font-size: 25px;
-    color: black;
-    font-weight: bold;
-    border-bottom-left-radius: 15px;
-    border-bottom-right-radius: 15px;
-  }
-
-  .header-text {
-    background-image: url('profilemainpng.png');
-    background-size: 75%;
-    background-repeat: no-repeat;
-    
-  }
-
-  nav .fas {
-    display: block;
-    font-size: 25px;
-    margin-top: 10px;
-  }
-
-  nav .fa-bars {
-    z-index: 0;
-  }
-
-  nav ul {
-    background: #ff004f;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 200px;
-    height: 100vh;
-    padding-top: 50px;
-    z-index: 2;
-    transition: left 0.5s;
-  }
-
-  nav ul li {
-    display: block;
-    margin: 25px;
-  }
-
-  nav ul .fas {
-    position: absolute;
-    top: 25px;
-    right: 25px;
-    cursor: pointer;
-    
-  }
-
-  #about {
-    padding: 50px 0;
-  }
-
-  #sidemenu {
-    z-index: 1;
-    height: 380px;
-    width: 150px;
-    border-radius: 0 30px 30px 30px;
-  }
-
-  .sub-title {
-    font-size: 40px;
-  }
-
-  .about-col-1,
-  .about-col-2 {
-    flex-basis: 100%;
-  }
-
-  .about-col-1 {
-    margin-bottom: 30px;
-  }
-
-  .about-col-2 {
-    font-size: 14px;
-  }
-
-  .tab-links {
-    font-size: 16px;
-    margin-right: 20px;
-  }
-
-  .contact-left,
-  .contact-right {
-    flex-basis: 100%;
-  }
-
-  .copyright {
-    font-size: 14px;
-  }
-
-  #msg {
-    color: green;
-    margin-top: -30px;
-    margin-bottom: 30px;
-    display: block;
-    font-size: 20px;
-  }
-
-  .contact-left p {
-    font-size: 20px;
-  }
-
-  .contact-left p i {
-    font-size: 25px;
-  }
-
-  .social-icons a {
-    font-size: 30px;
-  }
-  .skills-sub-title {
-    font-size: 40px;
-  }
-}
-/* --------------------------------- */
-@media only screen and (max-width: 414px)  {
-  .header-text .devpic{
-    background-image: url('profilemainpng.png');
-    background-size: 110%;
-   
-  }
-}
-/* ----------------------------------------------- */
-@media only screen and (max-width:640px) and (max-height:360px){
+ @media only screen and (max-width:640px) and (max-height:360px){
   .name{
   font-size: 35px;
   }
   .button button{
-   display: none;
+    font-size: 19px;
+    margin-top: 0;
+    width:236px;
+    padding:8px 38px; 
   }
-  .devinfo{
-    margin-left: 25px;
+  .aboutmy{
+    font-size: 21px;
   }
   .hello{
     font-size: 25px;
   }
-  .aboutmy{
-    font-size: 15px;
+} 
+  @media screen and (max-width: 415px)  {
+    
+      #header{
+        height: 85vh;
+      }
+      .hello{
+        font-size: 45px;
+      }
+    .name{
+      font-size: 42px;
+    }
+    .button button {
+     width: 250px;
+     padding: 10px 25px;
+     bottom: 10px;
+  }
+  }
+  @media screen and (width: 320px){
+    .button button{
+      width: 190px;
+    }
+    .button button {
+    padding: 8px 38px;
+    font-size: 20px;
+    margin-top: 8px;
+}
+#about{
+  margin-top: 50px;
+}
+.aboutmy{
+  font-size: 15px;
+}
+.hello{
+  font-size: 25px;
+}
+  }
+  
+
+  @media screen and (max-width: 281px)  {
+    
+      #header{
+        height: 85vh;
+      }
+      .hello{
+        font-size: 45px;
+      }
+    .name{
+      font-size: 42px;
+    }
+    .button button {
+     width: 200px;
+     padding: 10px 25px;
+     bottom: 10px;
+  }
+    .button button a{
+     font-size: 25px;
+  }
+  .header-text{
+    width: 120%;
   }
   .about-col-1 img{
-    width: 50%;
-    margin-left: 25%;
+    width: 115%;
   }
-  .services-list div{
-    width: 80%;
-    padding: 26px;
   }
+ @media screen and (max-width: 240px){
+    .button button{
+      width: 170px;
+    }
+    .button button a{
+      font-size: 13px;
+    }
+    .button button {
+    padding: 8px 38px;
+    font-size: 20px;
+    margin-top: 8px;
 }
-/* ------------------- */
-@media only screen and (width:912px) and (height:1368px){
-  nav .fas {
-    display: block;
-    font-size: 55px;
-    margin-top: 10px;
-  }
-.contact-btn{
-  display: none;
+#about{
+  margin-top: 50px;
 }
-
-  nav .fa-bars {
-    z-index: 0;
-  }
-  nav ul {
-    background: #ff004f;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 20px;
-    height: 100vh;
-    padding-top: 50px;
-    z-index: 2;
-    transition: left 0.5s;
-  }
-  nav ul li {
-    display: block;
-    margin: 38px;
-  }
-  nav ul li a{
-    font-size: 40px;
-  }
-  nav ul .fas {
-    position: absolute;
-    top: 25px;
-    right: 25px;
-    cursor: pointer;
-  }
-  #about {
-    padding: 50px 0;
-  }
-
-  #sidemenu {
-    z-index: 1;
-    height: 550px;
-    width: 250px;
-    border-radius: 0 30px 30px 30px;
-  }
-
-  .sub-title {
-    font-size: 40px;
-  }
-  .about-col-1,
-  .about-col-2 {
-    flex-basis: 100%;
-  }
+.aboutmy{
+  font-size: 15px;
 }
-/* ----------------------------------- */
-@media only screen and (width:800px) and (height:1280px){
+.hello{
+  font-size: 25px;
+}
 .name{
-  font-size: 55px;
+  font-size: 25px;
 }
-nav .fas {
-  display: block;
-  font-size: 55px;
-  margin-top: 10px;
-}
-.contact-btn{
-display: none;
-}
-
-nav .fa-bars {
-  z-index: 0;
-}
-nav ul {
-  background: #ff004f;
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 20px;
-  height: 100vh;
-  padding-top: 50px;
-  z-index: 2;
-  transition: left 0.5s;
-}
-nav ul li {
-  display: block;
-  margin: 38px;
-}
-nav ul li a{
-  font-size: 40px;
-}
-nav ul .fas {
-  position: absolute;
-  top: 25px;
-  right: 25px;
-  cursor: pointer;
-}
-#about {
-  padding: 50px 0;
-}
-
-#sidemenu {
-  z-index: 1;
-  height: 550px;
-  width: 250px;
-  border-radius: 0 30px 30px 30px;
-}
-
-.sub-title {
-  font-size: 56px;
-  padding-top: 27px;
-}
-.about-col-1,
-.about-col-2 {
-  flex-basis: 100%;
-}
-.about-col-2 p{
-  font-size: 30px;
-}
-.tab-contents ul li{
-  font-size: 20px;
-}
-.tab-contents ul li span{
-  font-size: 23px;
-}
-.services-list div{
-  font-size: 17px;
-}
-}
-/* -------------------------------- */
-  @media only screen and (width:320px)and (height:480px){
-    .aboutmy{
-      margin-bottom: 50px;
-      font-size: 20px;
-    }
-    .name{
-      font-size: 30px;
-    }
-    .header-text{
-      background-size: 100%;
-    }
-  }
-  @media only screen and (max-width: 412px)  {
-    .header-text{
-      background-image: url('profilemainpng.png');
-      /* background-size: 200%; */
-      /* width: 60vw; */
-    }
-  }
-  @media only screen and (max-width: 540px) {
-    .header-text{
-      background-size: 120%;
-    }
-  }
-  @media only screen and (width:912px)and (height:1368px){
-    .devpic{
-      margin-right: 65px;
-    }
-  }
-  @media only screen and (width:820px)and (height:1180px){
-    .devpic{
-      margin-right: 48px;
-    }
   }
