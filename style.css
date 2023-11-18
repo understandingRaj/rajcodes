@@ -807,7 +807,9 @@ nav ul .fas {
   }
 } 
   @media screen and (max-width: 415px)  {
-    
+    #about{
+      margin-top:60px;
+    }
       #header{
         height: 85vh;
       }
@@ -818,8 +820,8 @@ nav ul .fas {
       font-size: 42px;
     }
     .button button {
-     width: 250px;
-     padding: 10px 25px;
+     width: 240px;
+     padding: 10px 10px;
      bottom: 10px;
   }
   }
