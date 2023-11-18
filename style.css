@@ -810,14 +810,20 @@ nav ul .fas {
     #about{
       margin-top:60px;
     }
+    .header-text {
+       margin: 50px auto;
+    }
+    .aboutmy{
+      font-size:18px;
+    }
       #header{
         height: 85vh;
       }
       .hello{
-        font-size: 45px;
+        font-size: 29px;
       }
     .name{
-      font-size: 42px;
+      font-size: 35px;
     }
     .button button {
      width: 240px;
