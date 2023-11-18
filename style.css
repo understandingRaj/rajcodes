@@ -90,7 +90,7 @@ nav li a:hover::after {
   background-color: #8f87da;
   font-weight: bolder;
   cursor: pointer;
-  margin-top: 32px;
+  margin-top: 50px;
   font-size: 20px;
   color: #551a8b;
   font-weight: bold;
@@ -539,10 +539,10 @@ nav .fas {
     font-size: 35px;
   }
   .name{
-    font-size: 35px;
+    font-size: 50px;
   }
   .button button{
-    margin-top: 8px;
+    margin-top: 30px;
   }
   .button button{
      width: 190px;
@@ -673,17 +673,17 @@ nav ul .fas {
     display: none;
   }
   .hello{
-    font-size: 39px;
+    font-size: 60px;
   }
   .name{
-    font-size: 49px;
+    font-size: 70px;
   }
   .aboutmy{
-    font-size: 25px;
+    font-size: 30px;
   }
   .button button{
-    padding: 10px 10px;
-    font-size: 25px;
+    padding: 16px 38px;
+    font-size: 30px;
   }
   nav ul li{
     margin: 10px 5px;
@@ -693,7 +693,7 @@ nav ul .fas {
   }
   .button button{
     margin-top: 27px;
-    width: 227px;
+    width: 275px;
   }
  }
 @media only screen and (max-width:690px) {
@@ -807,28 +807,19 @@ nav ul .fas {
   }
 } 
   @media screen and (max-width: 415px)  {
-    #about{
-      margin-top:60px;
-    }
-    .header-text {
-      height:38vh;
-       margin: 50px auto;
-    }
-    .aboutmy{
-      font-size:18px;
-    }
+    
       #header{
         height: 85vh;
       }
       .hello{
-        font-size: 29px;
+        font-size: 45px;
       }
     .name{
-      font-size: 35px;
+      font-size: 42px;
     }
     .button button {
-     width: 240px;
-     padding: 10px 10px;
+     width: 250px;
+     padding: 10px 25px;
      bottom: 10px;
   }
   }
